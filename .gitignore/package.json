@@ -63,7 +63,7 @@ _from": "ws@^4.0.0",
     "real-time"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "main.js",
   "name": "ws",
   "repository": {
     "type": "git",
