@@ -18,21 +18,21 @@ module.exports.run = async (bot, message, args) => {
 
     .setColor("#15f153")
 
-    .addField("Personne reportD: ${rUser.id}`)
+    .addField("Personne report", `${rUser} with ID: ${rUser.id}`)
 
-    .addField("Reported By", `${message.author} with ID: ${message.author.id}`)
+    .addField("Report By", `${message.author} with ID: ${message.author.id}`)
 
     .addField("Channel", message.channel)
 
-    .addField("Time", message.createdAt)
+    .addField("Temps", message.createdAt)
 
-    .addField("Reason", rreason);
+    .addField("Raison", rreason);
 
 
 
     let reportschannel = message.guild.channels.find(`name`, "reports");
 
-    if(!reportschannel) return message.channel.send("Couldn't find reports channel.");
+    if(!reportschannel) return message.channel.send("Je ne trouve pas le channels du report.");
 
 
 
