@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
 
   if(!rMember) return message.reply("Je ne trouve pas le joueur.");
 
-  let role = args.join("Salut bienvenue").slice(22);
+  let role = args.join(" ").slice(22);
 
   if(!role) return message.reply("Role");
 
