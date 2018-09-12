@@ -22,21 +22,21 @@ module.exports.run = async (bot, message, args) => {
 
     .setColor("#e56b00")
 
-    .addField("Kicked User", `${kUser} with ID ${kUser.id}`)
+    .addField("Personne kick", `${kUser} with ID ${kUser.id}`)
 
-    .addField("Kicked By", `<@${message.author.id}> with ID ${message.author.id}`)
+    .addField("Kick By", `<@${message.author.id}> with ID ${message.author.id}`)
 
-    .addField("Kicked In", message.channel)
+    .addField("Kick dans le channels", message.channel)
 
-    .addField("Tiime", message.createdAt)
+    .addField("Temps", message.createdAt)
 
-    .addField("Reason", kReason);
+    .addField("Raison", kReason);
 
 
 
     let kickChannel = message.guild.channels.find(`name`, "incidents");
 
-    if(!kickChannel) return message.channel.send("Can't find incidents channel.");
+    if(!kickChannel) return message.channel.send("Je ne trouve pas le channels.");
 
 
 
