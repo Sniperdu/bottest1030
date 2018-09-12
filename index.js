@@ -82,4 +82,4 @@ bot.on("message", async message => {
 
 
 
-bot.login(tokenfile.token);
+client.login('NDQwMTM5Mjk0NDk0MTYyOTQ0.DmspBA.jQNNlq_kO3Pq3CP00kALMyMpGyc');
